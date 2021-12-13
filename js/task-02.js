@@ -15,7 +15,6 @@ for (let i = 0; i < ingredients.length; i += 1) {
 
   itemListEl.classList.add(`item`);
   itemListEl.textContent = ingredients[i];
-  /*console.log(itemListEl);*/
   listEl.append(itemListEl);
 }
 
