@@ -17,4 +17,4 @@ const titleListThree = document.querySelectorAll(`.item`)[2].firstElementChild.t
 console.log(`Elements: ${titleListThree}`);
 
 const threeElement = document.querySelectorAll(`.item ul`)[2].childElementCount;
-console.log(`Elements: `, threeElement)
+console.log(`Elements: `, threeElement);
