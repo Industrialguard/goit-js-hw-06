@@ -16,9 +16,13 @@ const images = [
 
 const imageEl = document.querySelector(`.gallery`);
 
-const makeImages = images.map((img) => `<li class="item"><img src=${img.url} alt=${img.alt} width = 500px ></li> `).join("");
+const makeImages = images.map(img => {
+  return `<li class="item"><img src=${img.url} alt="${img.alt}" width = 500px></li>`
+}).join("");
+  
+imageEl.insertAdjacentHTML('beforeend', makeImages);
 
-imageEl.innerHTML = makeImages;
+
+
 imageEl.style.display = "flex";
-imageEl.style.justifyContent = "space-around";
-
+imageEl.style.flexDirection = "column";
